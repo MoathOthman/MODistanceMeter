@@ -1,0 +1,26 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#define __needle__ @"needle"
+#define $needle @"needle"
+#define  __right_Shadow   @"right_shadow"
+#define __distance_meter_img @"distance_meter"
+#define __pull_BackGround_img @"pull_background"
+#define __stars_img @"stars"
+#import"UIColor+hex.h"
+#define outletTintColor @"#D8511E"
+
+#endif

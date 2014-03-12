@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECDE809618D04BB60048A607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE809518D04BB60048A607 /* Foundation.framework */; };
+		ECDE809818D04BB60048A607 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE809718D04BB60048A607 /* CoreGraphics.framework */; };
+		ECDE809A18D04BB60048A607 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE809918D04BB60048A607 /* UIKit.framework */; };
+		ECDE80A018D04BB60048A607 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECDE809E18D04BB60048A607 /* InfoPlist.strings */; };
+		ECDE80A218D04BB60048A607 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80A118D04BB60048A607 /* main.m */; };
+		ECDE80A618D04BB60048A607 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80A518D04BB60048A607 /* AppDelegate.m */; };
+		ECDE80A918D04BB60048A607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDE80A718D04BB60048A607 /* Main.storyboard */; };
+		ECDE80AC18D04BB60048A607 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80AB18D04BB60048A607 /* ViewController.m */; };
+		ECDE80AE18D04BB60048A607 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDE80AD18D04BB60048A607 /* Images.xcassets */; };
+		ECDE80B518D04BB60048A607 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE80B418D04BB60048A607 /* XCTest.framework */; };
+		ECDE80B618D04BB60048A607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE809518D04BB60048A607 /* Foundation.framework */; };
+		ECDE80B718D04BB60048A607 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE809918D04BB60048A607 /* UIKit.framework */; };
+		ECDE80BF18D04BB60048A607 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECDE80BD18D04BB60048A607 /* InfoPlist.strings */; };
+		ECDE80C118D04BB60048A607 /* MODistanceMeterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80C018D04BB60048A607 /* MODistanceMeterTests.m */; };
+		ECDE80CD18D04BFA0048A607 /* MOHorizontalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80CC18D04BFA0048A607 /* MOHorizontalPickerView.m */; };
+		ECDE80D218D04C130048A607 /* DistanceMeterScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80CF18D04C130048A607 /* DistanceMeterScroller.m */; };
+		ECDE80D318D04C130048A607 /* DistanceMeterElement.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80D118D04C130048A607 /* DistanceMeterElement.m */; };
+		ECDE80D618D04C1E0048A607 /* UIView+rect.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80D518D04C1E0048A607 /* UIView+rect.m */; };
+		ECDE80DA18D04C6B0048A607 /* HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80D918D04C6B0048A607 /* HelperMethods.m */; };
+		ECDE80DD18D04CE30048A607 /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE80DC18D04CE30048A607 /* UIColor+hex.m */; };
+		ECDE80E818D054A20048A607 /* distance_meter.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE80DE18D054A20048A607 /* distance_meter.png */; };
+		ECDE80E918D054A20048A607 /* distance_meter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE80DF18D054A20048A607 /* distance_meter@2x.png */; };
+		ECDE80EF18D054A20048A607 /* needle.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE80E518D054A20048A607 /* needle.png */; };
+		ECDE80F018D054A20048A607 /* needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE80E618D054A20048A607 /* needle@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECDE80B818D04BB60048A607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECDE808A18D04BB60048A607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECDE809118D04BB60048A607;
+			remoteInfo = MODistanceMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECDE809218D04BB60048A607 /* MODistanceMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODistanceMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDE809518D04BB60048A607 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECDE809718D04BB60048A607 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECDE809918D04BB60048A607 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECDE809D18D04BB60048A607 /* MODistanceMeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MODistanceMeter-Info.plist"; sourceTree = "<group>"; };
+		ECDE809F18D04BB60048A607 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECDE80A118D04BB60048A607 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECDE80A318D04BB60048A607 /* MODistanceMeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MODistanceMeter-Prefix.pch"; sourceTree = "<group>"; };
+		ECDE80A418D04BB60048A607 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECDE80A518D04BB60048A607 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECDE80A818D04BB60048A607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECDE80AA18D04BB60048A607 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECDE80AB18D04BB60048A607 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECDE80AD18D04BB60048A607 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECDE80B318D04BB60048A607 /* MODistanceMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODistanceMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDE80B418D04BB60048A607 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ECDE80BC18D04BB60048A607 /* MODistanceMeterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MODistanceMeterTests-Info.plist"; sourceTree = "<group>"; };
+		ECDE80BE18D04BB60048A607 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECDE80C018D04BB60048A607 /* MODistanceMeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODistanceMeterTests.m; sourceTree = "<group>"; };
+		ECDE80CA18D04BFA0048A607 /* MacrosForHorizontalPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacrosForHorizontalPicker.h; sourceTree = "<group>"; };
+		ECDE80CB18D04BFA0048A607 /* MOHorizontalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOHorizontalPickerView.h; sourceTree = "<group>"; };
+		ECDE80CC18D04BFA0048A607 /* MOHorizontalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOHorizontalPickerView.m; sourceTree = "<group>"; };
+		ECDE80CE18D04C130048A607 /* DistanceMeterScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceMeterScroller.h; sourceTree = "<group>"; };
+		ECDE80CF18D04C130048A607 /* DistanceMeterScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceMeterScroller.m; sourceTree = "<group>"; };
+		ECDE80D018D04C130048A607 /* DistanceMeterElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceMeterElement.h; sourceTree = "<group>"; };
+		ECDE80D118D04C130048A607 /* DistanceMeterElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceMeterElement.m; sourceTree = "<group>"; };
+		ECDE80D418D04C1E0048A607 /* UIView+rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+rect.h"; sourceTree = "<group>"; };
+		ECDE80D518D04C1E0048A607 /* UIView+rect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+rect.m"; sourceTree = "<group>"; };
+		ECDE80D718D04C300048A607 /* ScrollerCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollerCalculator.h; sourceTree = "<group>"; };
+		ECDE80D818D04C6B0048A607 /* HelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperMethods.h; sourceTree = "<group>"; };
+		ECDE80D918D04C6B0048A607 /* HelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperMethods.m; sourceTree = "<group>"; };
+		ECDE80DB18D04CE30048A607 /* UIColor+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex.h"; sourceTree = "<group>"; };
+		ECDE80DC18D04CE30048A607 /* UIColor+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
+		ECDE80DE18D054A20048A607 /* distance_meter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = distance_meter.png; sourceTree = "<group>"; };
+		ECDE80DF18D054A20048A607 /* distance_meter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "distance_meter@2x.png"; sourceTree = "<group>"; };
+		ECDE80E518D054A20048A607 /* needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = needle.png; sourceTree = "<group>"; };
+		ECDE80E618D054A20048A607 /* needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "needle@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECDE808F18D04BB60048A607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDE809818D04BB60048A607 /* CoreGraphics.framework in Frameworks */,
+				ECDE809A18D04BB60048A607 /* UIKit.framework in Frameworks */,
+				ECDE809618D04BB60048A607 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDE80B018D04BB60048A607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDE80B518D04BB60048A607 /* XCTest.framework in Frameworks */,
+				ECDE80B718D04BB60048A607 /* UIKit.framework in Frameworks */,
+				ECDE80B618D04BB60048A607 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECDE808918D04BB60048A607 = {
+			isa = PBXGroup;
+			children = (
+				ECDE80F418D054F40048A607 /* Assistant Classes */,
+				ECDE80F318D054E20048A607 /* resources */,
+				ECDE809B18D04BB60048A607 /* MODistanceMeter */,
+				ECDE80BA18D04BB60048A607 /* MODistanceMeterTests */,
+				ECDE809418D04BB60048A607 /* Frameworks */,
+				ECDE809318D04BB60048A607 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECDE809318D04BB60048A607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE809218D04BB60048A607 /* MODistanceMeter.app */,
+				ECDE80B318D04BB60048A607 /* MODistanceMeterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECDE809418D04BB60048A607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE809518D04BB60048A607 /* Foundation.framework */,
+				ECDE809718D04BB60048A607 /* CoreGraphics.framework */,
+				ECDE809918D04BB60048A607 /* UIKit.framework */,
+				ECDE80B418D04BB60048A607 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECDE809B18D04BB60048A607 /* MODistanceMeter */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE80A418D04BB60048A607 /* AppDelegate.h */,
+				ECDE80A518D04BB60048A607 /* AppDelegate.m */,
+				ECDE80A718D04BB60048A607 /* Main.storyboard */,
+				ECDE80AA18D04BB60048A607 /* ViewController.h */,
+				ECDE80AB18D04BB60048A607 /* ViewController.m */,
+				ECDE80F218D054C90048A607 /* Horizonal Distance Picker */,
+				ECDE80AD18D04BB60048A607 /* Images.xcassets */,
+				ECDE809C18D04BB60048A607 /* Supporting Files */,
+			);
+			path = MODistanceMeter;
+			sourceTree = "<group>";
+		};
+		ECDE809C18D04BB60048A607 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE809D18D04BB60048A607 /* MODistanceMeter-Info.plist */,
+				ECDE809E18D04BB60048A607 /* InfoPlist.strings */,
+				ECDE80A118D04BB60048A607 /* main.m */,
+				ECDE80A318D04BB60048A607 /* MODistanceMeter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECDE80BA18D04BB60048A607 /* MODistanceMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE80C018D04BB60048A607 /* MODistanceMeterTests.m */,
+				ECDE80BB18D04BB60048A607 /* Supporting Files */,
+			);
+			path = MODistanceMeterTests;
+			sourceTree = "<group>";
+		};
+		ECDE80BB18D04BB60048A607 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE80BC18D04BB60048A607 /* MODistanceMeterTests-Info.plist */,
+				ECDE80BD18D04BB60048A607 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECDE80F218D054C90048A607 /* Horizonal Distance Picker */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE80CA18D04BFA0048A607 /* MacrosForHorizontalPicker.h */,
+				ECDE80CB18D04BFA0048A607 /* MOHorizontalPickerView.h */,
+				ECDE80CC18D04BFA0048A607 /* MOHorizontalPickerView.m */,
+				ECDE80CE18D04C130048A607 /* DistanceMeterScroller.h */,
+				ECDE80CF18D04C130048A607 /* DistanceMeterScroller.m */,
+				ECDE80D018D04C130048A607 /* DistanceMeterElement.h */,
+				ECDE80D118D04C130048A607 /* DistanceMeterElement.m */,
+				ECDE80D718D04C300048A607 /* ScrollerCalculator.h */,
+			);
+			name = "Horizonal Distance Picker";
+			sourceTree = "<group>";
+		};
+		ECDE80F318D054E20048A607 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE80DE18D054A20048A607 /* distance_meter.png */,
+				ECDE80DF18D054A20048A607 /* distance_meter@2x.png */,
+				ECDE80E518D054A20048A607 /* needle.png */,
+				ECDE80E618D054A20048A607 /* needle@2x.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		ECDE80F418D054F40048A607 /* Assistant Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE80D418D04C1E0048A607 /* UIView+rect.h */,
+				ECDE80D518D04C1E0048A607 /* UIView+rect.m */,
+				ECDE80D818D04C6B0048A607 /* HelperMethods.h */,
+				ECDE80D918D04C6B0048A607 /* HelperMethods.m */,
+				ECDE80DB18D04CE30048A607 /* UIColor+hex.h */,
+				ECDE80DC18D04CE30048A607 /* UIColor+hex.m */,
+			);
+			name = "Assistant Classes";
+			path = MODistanceMeter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECDE809118D04BB60048A607 /* MODistanceMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDE80C418D04BB60048A607 /* Build configuration list for PBXNativeTarget "MODistanceMeter" */;
+			buildPhases = (
+				ECDE808E18D04BB60048A607 /* Sources */,
+				ECDE808F18D04BB60048A607 /* Frameworks */,
+				ECDE809018D04BB60048A607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MODistanceMeter;
+			productName = MODistanceMeter;
+			productReference = ECDE809218D04BB60048A607 /* MODistanceMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECDE80B218D04BB60048A607 /* MODistanceMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDE80C718D04BB60048A607 /* Build configuration list for PBXNativeTarget "MODistanceMeterTests" */;
+			buildPhases = (
+				ECDE80AF18D04BB60048A607 /* Sources */,
+				ECDE80B018D04BB60048A607 /* Frameworks */,
+				ECDE80B118D04BB60048A607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECDE80B918D04BB60048A607 /* PBXTargetDependency */,
+			);
+			name = MODistanceMeterTests;
+			productName = MODistanceMeterTests;
+			productReference = ECDE80B318D04BB60048A607 /* MODistanceMeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECDE808A18D04BB60048A607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "moath othman";
+				TargetAttributes = {
+					ECDE80B218D04BB60048A607 = {
+						TestTargetID = ECDE809118D04BB60048A607;
+					};
+				};
+			};
+			buildConfigurationList = ECDE808D18D04BB60048A607 /* Build configuration list for PBXProject "MODistanceMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECDE808918D04BB60048A607;
+			productRefGroup = ECDE809318D04BB60048A607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECDE809118D04BB60048A607 /* MODistanceMeter */,
+				ECDE80B218D04BB60048A607 /* MODistanceMeterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECDE809018D04BB60048A607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDE80EF18D054A20048A607 /* needle.png in Resources */,
+				ECDE80F018D054A20048A607 /* needle@2x.png in Resources */,
+				ECDE80E818D054A20048A607 /* distance_meter.png in Resources */,
+				ECDE80AE18D04BB60048A607 /* Images.xcassets in Resources */,
+				ECDE80A018D04BB60048A607 /* InfoPlist.strings in Resources */,
+				ECDE80A918D04BB60048A607 /* Main.storyboard in Resources */,
+				ECDE80E918D054A20048A607 /* distance_meter@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDE80B118D04BB60048A607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDE80BF18D04BB60048A607 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECDE808E18D04BB60048A607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDE80AC18D04BB60048A607 /* ViewController.m in Sources */,
+				ECDE80DD18D04CE30048A607 /* UIColor+hex.m in Sources */,
+				ECDE80D318D04C130048A607 /* DistanceMeterElement.m in Sources */,
+				ECDE80D618D04C1E0048A607 /* UIView+rect.m in Sources */,
+				ECDE80A618D04BB60048A607 /* AppDelegate.m in Sources */,
+				ECDE80CD18D04BFA0048A607 /* MOHorizontalPickerView.m in Sources */,
+				ECDE80A218D04BB60048A607 /* main.m in Sources */,
+				ECDE80DA18D04C6B0048A607 /* HelperMethods.m in Sources */,
+				ECDE80D218D04C130048A607 /* DistanceMeterScroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDE80AF18D04BB60048A607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDE80C118D04BB60048A607 /* MODistanceMeterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECDE80B918D04BB60048A607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECDE809118D04BB60048A607 /* MODistanceMeter */;
+			targetProxy = ECDE80B818D04BB60048A607 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECDE809E18D04BB60048A607 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECDE809F18D04BB60048A607 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ECDE80A718D04BB60048A607 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECDE80A818D04BB60048A607 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECDE80BD18D04BB60048A607 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECDE80BE18D04BB60048A607 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECDE80C218D04BB60048A607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECDE80C318D04BB60048A607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECDE80C518D04BB60048A607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MODistanceMeter/MODistanceMeter-Prefix.pch";
+				INFOPLIST_FILE = "MODistanceMeter/MODistanceMeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ECDE80C618D04BB60048A607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MODistanceMeter/MODistanceMeter-Prefix.pch";
+				INFOPLIST_FILE = "MODistanceMeter/MODistanceMeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ECDE80C818D04BB60048A607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MODistanceMeter.app/MODistanceMeter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MODistanceMeter/MODistanceMeter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MODistanceMeterTests/MODistanceMeterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ECDE80C918D04BB60048A607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MODistanceMeter.app/MODistanceMeter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MODistanceMeter/MODistanceMeter-Prefix.pch";
+				INFOPLIST_FILE = "MODistanceMeterTests/MODistanceMeterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECDE808D18D04BB60048A607 /* Build configuration list for PBXProject "MODistanceMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDE80C218D04BB60048A607 /* Debug */,
+				ECDE80C318D04BB60048A607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDE80C418D04BB60048A607 /* Build configuration list for PBXNativeTarget "MODistanceMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDE80C518D04BB60048A607 /* Debug */,
+				ECDE80C618D04BB60048A607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDE80C718D04BB60048A607 /* Build configuration list for PBXNativeTarget "MODistanceMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDE80C818D04BB60048A607 /* Debug */,
+				ECDE80C918D04BB60048A607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECDE808A18D04BB60048A607 /* Project object */;
+}
